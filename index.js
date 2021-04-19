@@ -3,13 +3,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const searchForm = document.getElementById('github-form');
     const searchField = document.getElementById('search');
-    const submitButton = document.getElementById('submitButton');
+    const searchBtn = document.getElementById('searchBtn');
     const userList = document.getElementById('user-list');
     const userHead = document.getElementById('user-header');
     const repoList = document.getElementById('repo-list');
     const repoHead = document.getElementById('repo-header');
 
-    submitButton.disabled = false;
+    searchBtn.disabled = false;
 
     function fetchUsers(userE) {
         const URL = `https://api.github.com/search/users?q=${userE}`;
